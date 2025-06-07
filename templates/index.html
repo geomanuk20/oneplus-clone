@@ -1,0 +1,1408 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Plus</title>
+    <link rel="icon" href="{% static 'images/oneplus logo title.png' %}" type="image/png">
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container px-0"> <!-- Changed to container-fluid and px-0 -->
+                <!-- Mobile menu button, logo, and icons -->
+                <div class="d-flex d-lg-none align-items-center w-100 px-3"> <!-- Added px-3 for small padding -->
+                    <a class="navbar-brand" href="#">
+                        <img width="80" height="20" src="{% static 'images/oneplus.png' %}" alt="OnePlus">
+                    </a>
+                    <div class="d-flex gap-3 ms-auto me-2">
+                        <a class="nav-link" href="#">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+                                alt="search">
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img width="20" height="20"
+                                src="https://img.icons8.com/external-anggara-detail-outline-anggara-putra/24/external-cart-retail-anggara-detail-outline-anggara-putra-4.png"
+                                alt="shopping-bag">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <a class="navbar-brand d-none d-lg-block me-4 ps-3" href="#"> <!-- Added ps-3 -->
+                        <img width="80" height="20" src="{% static 'images/oneplus.png' %}" alt="OnePlus">
+                    </a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Store</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Phone</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Tablet</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Wearables</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Audio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">More Products</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">OneTopia</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Community</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Support</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex gap-3 ms-auto pe-3"> <!-- Added pe-3 -->
+                        <a class="nav-link d-none d-lg-block" href="#">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/search--v1.png"
+                                alt="search">
+                        </a>
+                        <a class="nav-link d-none d-lg-block" href="#">
+                            <img width="20" height="20"
+                                src="https://img.icons8.com/external-anggara-detail-outline-anggara-putra/24/external-cart-retail-anggara-detail-outline-anggara-putra-4.png"
+                                alt="shopping-bag">
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img width="20" height="20"
+                                src="https://img.icons8.com/material-outlined/24/user-male-circle.png"
+                                alt="user-profile">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section position-relative text-center">
+        <!-- Full width image -->
+        <img class="hero-image w-100 d-none d-md-block" src="{% static 'images/13s_Desktop_0428.jpg' %}"
+            alt="OnePlus 13s">
+
+        <!-- Mobile image -->
+        <div class="d-md-none">
+            <img class="hero-image w-100" src="{% static 'images/13s_Desktop_0428.jpg' %}" alt="OnePlus 13s">
+        </div>
+
+        <!-- Content -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+            <div class="position-absolute top-0 mt-5 pt-5 start-50 translate-middle-x text-black p-2"
+                style="max-width: 80%;">
+                <p class="mb-1">Powered up, sized down.</p>
+                <h1>OnePlus 13s</h1>
+                <p>Tap 'Notify Me' to get the updates on the OnePlus 13s. Coming soon.</p>
+                <button id="section1-button" class="bg-black text-white rounded-pill small px-3 py-2 border-0">
+                    Notify Me
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-relative text-center pt-2">
+        <img class="img-fluid w-100" src="{% static 'images/13R_Desktop_IN.jpg' %}" alt="Description"
+            style="height: 700px; object-fit: cover;">
+
+        <div class="position-absolute top-0 start-50 translate-middle-x text-white p-2" style="max-width: 80%;">
+            <h5 class="mt-5 text-white-50">Pro. Everywhere.</h5>
+            <h1 class="">OnePlus 13</h1>
+            <p class="mb-1 pt-1">From ₹64,999 incl. instant discount of ₹5,000 <br>Get additional exchange bonus upto
+                ₹7,000.</p>
+            <img style="width: auto; height: 30px;" src="{% static 'images/lifetime-badge-black-0430.png' %}" alt="">
+            <br><br>
+            <button id="section1-button" class="bg-white text-black rounded-pill small px-3 py-2 border-0">
+                Buy now
+            </button>
+            <a class="text-white small" href="#">Learn More</a>
+
+            <!-- Bank Offers Container -->
+            <div style="margin-top: 350px;">
+                <div style="display: flex; justify-content: center; align-items: center; 
+                background-color: rgba(72, 67, 67, 0.5); padding: 5px; border-radius: 8px;
+                max-width: 100%; overflow: hidden;">
+
+                    <!-- Offers Content -->
+                    <div id="bank-offer-content" style="display: flex; align-items: center; 
+                    width: 100%; min-width: 0;"> <!-- Added min-width: 0 for flexbox overflow -->
+
+                        <!-- Default HDFC Offer -->
+                        <div id="hdfc-offer" style="display: flex; align-items: center; 
+                        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                        flex: 1; min-width: 0;"> <!-- Added flexbox properties -->
+                            <img src="{% static 'images/HDFC.svg' %}" alt="HDFC Bank"
+                                style="margin-right: 10px; height: 20px; flex-shrink: 0;">
+                            <p class="text-white" style="margin: 0; font-size: 12px; 
+                            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                ₹5,000 Instant Discount on HDFC Bank Credit...
+                            </p>
+                        </div>
+
+                        <!-- ICICI Offer (hidden by default) -->
+                        <div id="icici-offer" style="display: none; align-items: center;
+                        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                        flex: 1; min-width: 0;">
+                            <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank"
+                                style="margin-right: 10px; height: 20px; flex-shrink: 0;">
+                            <p class="text-white" style="margin: 0; font-size: 12px;
+                            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                ₹5,000 Instant Discount on ICICI Bank Credit...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div style="display: flex; flex-shrink: 0;">
+                        <button onclick="prevBankOffer13()" style="background: transparent; border: none; cursor: pointer; margin-right: 5px;
+                       padding: 5px; display: flex; align-items: center;">
+                            <img width="15" height="15" src="https://img.icons8.com/ios-filled/50/FFFFFF/back.png"
+                                alt="Previous" />
+                        </button>
+                        <button onclick="nextBankOffer13()" style="background: transparent; border: none; cursor: pointer; margin-left: 5px;
+                       padding: 5px; display: flex; align-items: center;">
+                            <img width="15" height="15"
+                                src="https://img.icons8.com/ios-filled/50/FFFFFF/forward--v1.png" alt="Next" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="position-relative text-center pt-2">
+        <img class="img-fluid w-100" src="{% static 'images/13_Desktop_IN.jpg' %}" alt="Description"
+            style="height: 700px; object-fit: cover;">
+
+        <div class="position-absolute top-0 start-50 translate-middle-x text-white p-2" style="max-width: 80%;">
+            <h5 class="mt-5 text-white-50">Pro. Everywhere.</h5>
+            <h1 class="">OnePlus 13R</h1>
+            <p class="mb-1 pt-1">From ₹39,999 incl. instant discount of ₹3,000 <br>Get additional exchange bonus upto
+                ₹4,000.</p>
+            <img style="width: px; height: 30px;" src="{% static 'images/lifetime-badge-black-0430.png' %}" alt="">
+            <br><br>
+            <button id="section1-button" class="bg-white text-black rounded-pill small px-3 py-2 border-0">
+                Buy now
+            </button>
+            <a class="text-white small" href="#">Learn More</a>
+
+            <!-- Bank Offers Container -->
+            <div style="margin-top: 350px;">
+                <div style="display: flex; justify-content: center; align-items: center; 
+                background-color: rgba(72, 67, 67, 0.5); padding: 5px; border-radius: 8px;
+                max-width: 100%; overflow: hidden;">
+
+                    <!-- Offers Content -->
+                    <div id="bank-offer-content" style="display: flex; align-items: center; 
+                    width: 100%; min-width: 0;"> <!-- Added min-width: 0 for flexbox overflow -->
+
+                        <!-- Default HDFC Offer -->
+                        <div id="hdfc-offer13r" style="display: flex; align-items: center; 
+                        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                        flex: 1; min-width: 0;"> <!-- Added flexbox properties -->
+                            <img src="{% static 'images/HDFC.svg' %}" alt="HDFC Bank"
+                                style="margin-right: 10px; height: 20px; flex-shrink: 0;">
+                            <p class="text-white" style="margin: 0; font-size: 12px; 
+                            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                ₹5,000 Instant Discount on HDFC Bank Credit...
+                            </p>
+                        </div>
+
+                        <!-- ICICI Offer (hidden by default) -->
+                        <div id="icici-offer13r" style="display: none; align-items: center;
+                        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                        flex: 1; min-width: 0;">
+                            <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank"
+                                style="margin-right: 10px; height: 20px; flex-shrink: 0;">
+                            <p class="text-white" style="margin: 0; font-size: 12px;
+                            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                ₹5,000 Instant Discount on ICICI Bank Credit...
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Buttons -->
+                    <div style="display: flex; flex-shrink: 0;">
+                        <button onclick="prevBankOffer13R()" style="background: transparent; border: none; cursor: pointer; margin-right: 5px;
+                       padding: 5px; display: flex; align-items: center;">
+                            <img width="15" height="15" src="https://img.icons8.com/ios-filled/50/FFFFFF/back.png"
+                                alt="Previous" />
+                        </button>
+                        <button onclick="nextBankOffer13R()" style="background: transparent; border: none; cursor: pointer; margin-left: 5px;
+                       padding: 5px; display: flex; align-items: center;">
+                            <img width="15" height="15"
+                                src="https://img.icons8.com/ios-filled/50/FFFFFF/forward--v1.png" alt="Next" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+
+    <section>
+        <!-- Container for the product sections -->
+        <div class="container-fluid p-lg-5 p-3">
+            <!-- First row with two products side by side -->
+            <div class="row g-3">
+                <!-- OnePlus nord ce4 Section -->
+                <div class="col-lg-6 col-12 position-relative">
+                    <img class="img-fluid w-100" src="{% static 'images/NordCE4gift-pc.jpg' %}" alt="OnePlus Nord CE4"
+                        style="height: 440px; object-fit: cover;">
+
+                    <div class="position-absolute top-0 start-0 text-black p-3 p-lg-4" style="max-width: 100%;">
+                        <p class="text-black">All Power.All You</p>
+                        <h3 class="">OnePlus Nord CE4</h3>
+                        <p class="small">From ₹19,999 incl. instant discount. <br>Get a free OnePlus Sandstone Bumper
+                            Case with every purchase. *First come first served.</p>
+
+                        <!-- Bank Offers Container -->
+                        <div style="margin-top: 180px;">
+                            <button class="btn btn-dark rounded-pill px-3 py-2 small">
+                                Buy now
+                            </button>
+                            <a class="small text-black ms-2" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Bank Offers Bar -->
+                    <div class="position-absolute bottom-0 start-0 end-0">
+                        <div class="d-flex justify-content-between align-items-center bg-white p-2 rounded"
+                            style="overflow: hidden;">
+                            <div class="d-flex align-items-center" style="min-width: 0; flex: 1;">
+                                <!-- Default HDFC Offer -->
+                                <div id="hdfc-offerce4" class="d-flex align-items-center text-truncate">
+                                    <img src="{% static 'images/HDFC.svg' %}" alt="HDFC Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on HDFC Bank
+                                        Credit.</span>
+                                </div>
+                                <!-- Other offers (hidden by default) -->
+                                <div id="icici-offerce4" class="d-none align-items-center text-truncate">
+                                    <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on ICICI Bank
+                                        Credit...</span>
+                                </div>
+                                <div id="no-cost-offerce4" class="d-none align-items-center text-truncate">
+                                    <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">No Cost EMI up to 6 months.</span>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="d-flex ms-2">
+                                <button onclick="prevBankOfferce4()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-outlined/24/back--v1.png" alt="Previous" />
+                                </button>
+                                <button onclick="nextBankOfferce4()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-sharp/24/forward.png" alt="Next" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Product Card -->
+                <div class="col-lg-6 col-12 position-relative">
+                    <img class="img-fluid w-100" src="{% static 'images/PC_Two_NordCE4Lite_Desktop.jpg' %}"
+                        alt="OnePlus Nord CE4 Lite" style="height: 440px; object-fit: cover;">
+
+                    <div class="position-absolute top-0 start-0 text-black p-3 p-lg-4" style="max-width: 100%;">
+                        <p class="text-black">All-Day Entertainment</p>
+                        <h3 class="">OnePlus Nord CE4 Lite</h3>
+                        <p class="small">From ₹16,999 incl.Bank discount. <br>Get a free OnePlus Sandstone Bumper Case
+                            with every purchase. *First come first served.</p>
+
+                        <!-- Bank Offers Container -->
+                        <div style="margin-top: 180px;">
+                            <button class="btn btn-dark rounded-pill px-3 py-2 small">
+                                Buy now
+                            </button>
+                            <a class="small text-black ms-2" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Bank Offers Bar -->
+                    <div class="position-absolute bottom-0 start-0 end-0">
+                        <div class="d-flex justify-content-between align-items-center bg-white p-2 rounded"
+                            style="overflow: hidden;">
+                            <div class="d-flex align-items-center" style="min-width: 0; flex: 1;">
+                                <!-- Default HDFC Offer -->
+                                <div id="hdfc-offer-lite" class="d-flex align-items-center text-truncate">
+                                    <img src="{% static 'images/HDFC.svg' %}" alt="HDFC Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on HDFC Bank
+                                        Credit.</span>
+                                </div>
+                                <!-- Other offers (hidden by default) -->
+                                <div id="icici-offer-lite" class="d-none align-items-center text-truncate">
+                                    <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on ICICI Bank
+                                        Credit...</span>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="d-flex ms-2">
+                                <button onclick="prevBankOfferLite()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-outlined/24/back--v1.png" alt="Previous" />
+                                </button>
+                                <button onclick="nextBankOfferLite()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-sharp/24/forward.png" alt="Next" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Product Card -->
+                <div class="col-lg-6 col-12 position-relative">
+                    <img class="img-fluid w-100" src="{% static 'images/PC_Two_Nord4_Desktop_0408.jpg' %}"
+                        alt="OnePlus Nord 4" style="height: 440px; object-fit: cover;">
+
+                    <div class="position-absolute top-0 start-0 text-black p-3 p-lg-4" style="max-width: 100%;">
+                        <p class="text-black">Pedal to the Metal</p>
+                        <h3 class="">OnePlus Nord 4</h3>
+                        <p class="small">From ₹26,499 incl.₹3500 Bank discount. <br>Get a free Phone Case & Screen
+                            Protector with every purchase. *First come first served.</p>
+
+                        <!-- Bank Offers Container -->
+                        <div style="margin-top: 180px;">
+                            <button class="btn btn-dark rounded-pill px-3 py-2 small">
+                                Buy now
+                            </button>
+                            <a class="small text-black ms-2" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Bank Offers Bar -->
+                    <div class="position-absolute bottom-0 start-0 end-0">
+                        <div class="d-flex justify-content-between align-items-center bg-white p-2 rounded"
+                            style="overflow: hidden;">
+                            <div class="d-flex align-items-center" style="min-width: 0; flex: 1;">
+                                <!-- Default HDFC Offer -->
+                                <div id="hdfc-offer-nord4" class="d-flex align-items-center text-truncate">
+                                    <img src="{% static 'images/HDFC.svg' %}" alt="HDFC Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on HDFC Bank
+                                        Credit.</span>
+                                </div>
+                                <!-- Other offers (hidden by default) -->
+                                <div id="icici-offer-nord4" class="d-none align-items-center text-truncate">
+                                    <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on ICICI Bank
+                                        Credit...</span>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="d-flex ms-2">
+                                <button onclick="prevBankOfferNord4()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-outlined/24/back--v1.png" alt="Previous" />
+                                </button>
+                                <button onclick="nextBankOfferNord4()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-sharp/24/forward.png" alt="Next" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth Product Card -->
+                <div class="col-lg-6 col-12 position-relative">
+                    <img class="img-fluid w-100" src="{% static 'images/Guass3color_Desktop.jpg' %}"
+                        alt="OnePlus Buds Pro 3" style="height: 440px; object-fit: cover;">
+
+                    <div class="position-absolute top-0 start-0 text-white p-3 p-lg-4" style="max-width: 100%;">
+                        <h3 class="text-white">OnePlus Buds Pro 3</h3>
+                        <p class="text-white small">From ₹11,999</p>
+
+                        <!-- Bank Offers Container -->
+                        <div style="margin-top: 300px;">
+                            <button class="btn btn-dark rounded-pill px-3 py-2 small">
+                                Buy now
+                            </button>
+                            <a class="text-white small ms-2" href="#">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Bank Offers Bar -->
+                    <div class="position-absolute bottom-0 start-0 end-0 ">
+                        <div class="d-flex justify-content-between align-items-center bg-white p-2 rounded"
+                            style="overflow: hidden;">
+                            <div class="d-flex align-items-center" style="min-width: 0; flex: 1;">
+                                <!-- Default HDFC Offer -->
+                                <div id="hdfc-offer-buds" class="d-flex align-items-center text-truncate">
+                                    <img src="{% static 'images/HDFC.svg' %}" alt="HDFC Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on HDFC Bank
+                                        Credit.</span>
+                                </div>
+                                <!-- Other offers (hidden by default) -->
+                                <div id="icici-offer-buds" class="d-none align-items-center text-truncate">
+                                    <img src="{% static 'images/ICICI-home-3.svg' %}" alt="ICICI Bank" class="me-2"
+                                        style="height: 20px; flex-shrink: 0;">
+                                    <span class="small text-truncate">₹5,000 Instant Discount on ICICI Bank
+                                        Credit...</span>
+                                </div>
+                            </div>
+
+                            <!-- Navigation Buttons -->
+                            <div class="d-flex ms-2">
+                                <button onclick="prevBankOfferBuds()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-outlined/24/back--v1.png" alt="Previous" />
+                                </button>
+                                <button onclick="nextBankOfferBuds()" class="btn btn-link p-1">
+                                    <img width="15" height="15"
+                                        src="https://img.icons8.com/material-sharp/24/forward.png" alt="Next" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feedback-section">
+        <div class="container">
+            <h2 class="feedback-title text-center mb-4">How would you rate the design and product information on this
+                page?</h2>
+
+            <!-- Star Rating Container -->
+            <div class="star-container mx-auto" style="max-width: 350px;">
+                <!-- Star Rating -->
+                <div class="star-rating mb-3">
+                    <input type="radio" id="star1" name="rating" value="1" class="d-none">
+                    <label for="star1" class="star-label">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" class="d-none">
+                    <label for="star2" class="star-label">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" class="d-none">
+                    <label for="star3" class="star-label">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" class="d-none">
+                    <label for="star4" class="star-label">★</label>
+
+                    <input type="radio" id="star5" name="rating" value="5" class="d-none">
+                    <label for="star5" class="star-label">★</label>
+                </div>
+
+                <!-- Rating Labels -->
+                <div class="d-flex justify-content-between mb-4">
+                    <span class="text-muted">Not good at all</span>
+                    <span class="text-muted">Very good</span>
+                </div>
+            </div>
+
+            <!-- Button Container -->
+            <div class="text-md-end text-center">
+                <button id="feedbtn" class="submit-btn btn  px-4">Next</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container-fluid p-lg-5 p-3">
+            <div class="row g-4">
+                <!-- First Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0 h-100">
+                            <!-- Text Content - becomes full width on mobile -->
+                            <div class="col-md-6 p-3 p-lg-4 d-flex flex-column">
+                                <h3 class="fw-bold mb-3">A OnePlus Promise</h3>
+                                <p class="small text-muted mb-3 flex-grow-1">
+                                    The only brand that provides lifetime display warranty for an industry-wide
+                                    greenline issue.
+                                </p>
+                                <a href="#" class="small text-black align-self-start">Learn More</a>
+                            </div>
+                            <!-- Image - becomes full width on mobile -->
+                            <div class="col-md-6 order-md-first order-last">
+                                <img src="{% static 'images/ArticleCard_Light_lifetime_Desktop.jpg' %}"
+                                    class="img-fluid w-100 h-100" style="object-fit: cover; min-height: 200px;"
+                                    alt="OnePlus Warranty">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0 h-100">
+                            <!-- Text Content -->
+                            <div class="col-md-6 p-3 p-lg-4 d-flex flex-column">
+                                <h3 class="fw-bold mb-3">Corporate Employee Program</h3>
+                                <p class="small text-muted mb-3 flex-grow-1">
+                                    Verify your corporate email ID and get a chance to win the all-new OnePlus 13s
+                                    and more.
+                                </p>
+                                <a href="#" class="small text-black align-self-start">Learn More</a>
+                            </div>
+                            <!-- Image -->
+                            <div class="col-md-6">
+                                <img src="{% static 'images/Light_EPP_Desktop.jpg' %}" class="img-fluid w-100 h-100"
+                                    style="object-fit: cover; min-height: 200px;" alt="OnePlus Product">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid p-lg-5 p-3">
+            <div class="row justify-content-center">
+                <!-- Single Card - Responsive Version -->
+                <div class="col-12">
+                    <div class="card h-100 border-0 shadow-sm" id="warranty">
+                        <div class="row g-0 h-100">
+                            <!-- Text Content (order changes on mobile) -->
+                            <div
+                                class="col-lg-4 col-md-6 p-lg-5 p-4 d-flex flex-column justify-content-between order-lg-1 order-2">
+                                <div>
+                                    <p class="text-muted mb-1">Make the Moment</p>
+                                    <h2 class="fw-semibold mb-4 fs-3">2025 OnePlus Photography Awards</h2>
+                                </div>
+                                <div>
+                                    <p class="text-muted mb-4" style="font-size: small;">
+                                        The 2025 OnePlus Photography Awards welcomes EVERY photography enthusiast around
+                                        the world. Showcase your unique creativity and remarkable talent, and share your
+                                        visual story with breathtaking images. Make your Moment on OnePlus.
+                                    </p>
+                                    <a style="color: black; font-size: small;" href="#"
+                                        class="text-decoration-none">Learn More</a>
+                                </div>
+                            </div>
+                            <!-- Image (order changes on mobile) -->
+                            <div class="col-lg-8 col-md-6 order-lg-2 order-1">
+                                <img src="{% static 'images/Article_Card_Pc.jpg' %}"
+                                    class="img-fluid rounded-end w-100 h-100"
+                                    style="object-fit: cover; min-height: 500px; max-height: 600px;"
+                                    alt="OnePlus Photography Awards">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Black Section with Two Cards -->
+    <section class="bg-black text-white">
+        <div class="container-fluid p-lg-5 p-3">
+            <div class="row justify-content-center">
+                <!-- First Card - Image Left / Text Right -->
+                <div class="col-12 mb-3 mb-lg-4">
+                    <div class="card h-100 border-0 shadow-sm bg-transparent">
+                        <div class="row g-0 h-100 flex-lg-row flex-column-reverse">
+                            <!-- Image (left on desktop, bottom on mobile) -->
+                            <div class="col-lg-8">
+                                <img src="{% static 'images/new-ArticleCard_Light_PhotographyAwards_Desktop.jpg' %}"
+                                    class="img-fluid rounded-start w-100 h-100"
+                                    style="object-fit: cover; min-height: 500px; max-height: 600px;"
+                                    alt="OnePlus Photography Awards">
+                            </div>
+                            <!-- Text Content (right on desktop, top on mobile) -->
+                            <div class="col-lg-4 p-lg-5 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <p class="mb-1 opacity-75 text-white">One For All</p>
+                                    <h2 class="fw-semibold mb-3 mb-lg-4 fs-3 text-white">OnePlus Ensemble</h2>
+                                </div>
+                                <div>
+                                    <p class="mb-3 mb-lg-4 small opacity-75 text-white">
+                                        Seamlessly connect all the OnePlus products to one another for a smart and
+                                        smooth experience.
+                                    </p>
+                                    <a href="#" class="text-white small text-decoration-underline">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Red Cable Club Link -->
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center py-3  border-secondary">
+                        <p class="mb-0 fs-5 fs-lg-3">Red Cable Club</p>
+                        <a href="#" class="text-white text-decoration-none small">join the club <span
+                                class="ms-1">></span></a>
+                    </div>
+                </div>
+
+                <!-- Second Card - Text Left / Image Right -->
+                <div class="col-12 mt-3 mt-lg-4">
+                    <div class="card h-100 border-0 shadow-sm bg-transparent">
+                        <div class="row g-0 h-100 flex-lg-row flex-column">
+                            <!-- Text Content (left on desktop, top on mobile) -->
+                            <div class="col-lg-4 p-lg-5 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h2 class="fw-semibold mb-3 mb-lg-4 fs-3 text-white">One community, limitless
+                                        passion</h2>
+                                </div>
+                                <div>
+                                    <p class="mb-3 mb-lg-4 small opacity-75 text-white">
+                                        United by one common belief - 'Great happens when we're all wired together'.
+                                    </p>
+                                    <a href="#" class="text-white small text-decoration-underline">Learn More</a>
+                                </div>
+                            </div>
+                            <!-- Image (right on desktop, bottom on mobile) -->
+                            <div class="col-lg-8">
+                                <img src="{% static 'images/RCC_Desktop.jpg' %}"
+                                    class="img-fluid rounded-end w-100 h-100"
+                                    style="object-fit: cover; min-height: 500px; max-height: 600px;"
+                                    alt="OnePlus Community">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- White Section -->
+    <section class="bg-white">
+        <div class="container-fluid p-lg-5 p-3">
+            <div class="row justify-content-center">
+                <!-- Single Card - Image Left / Text Right -->
+                <div class="col-12">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0 h-100 flex-lg-row flex-column-reverse">
+                            <!-- Image (left on desktop, bottom on mobile) -->
+                            <div class="col-lg-8">
+                                <img src="{% static 'images/ArticleCard_Light_OxygenOS15_Desktop.jpg' %}"
+                                    class="img-fluid rounded-start w-100 h-100"
+                                    style="object-fit: cover; min-height: 500px; max-height: 600px;" alt="OxygenOS 15">
+                            </div>
+                            <!-- Text Content (right on desktop, top on mobile) -->
+                            <div class="col-lg-4 p-lg-5 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <p class="mb-1 text-muted">Speed Meets AI</p>
+                                    <h2 class="fw-semibold mb-3 mb-lg-4 fs-3 text-black">OxygenOS 15</h2>
+                                </div>
+                                <div>
+                                    <p class="mb-3 mb-lg-4 text-muted small">
+                                        Glide with OxygenOS 15. Soar to a new apex of speed and dive into extreme
+                                        smoothness. With the latest AI features for a smarter phone, Speed meets AI.
+                                    </p>
+                                    <a href="#" class="text-black small text-decoration-underline">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="support-section">
+        <div class="container-fluid p-lg-5 p-3">
+            <!-- Section Header -->
+            <div class="row mb-3 mb-lg-4">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0 fs-4 fw-semibold">Support</h2>
+                    <a href="#" class="text-decoration-none text-black small fw-medium">View more <span
+                            class="ms-1">></span></a>
+                </div>
+            </div>
+
+            <!-- Support Cards -->
+            <div class="row g-3 g-lg-4">
+                <!-- First Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0 h-100 flex-md-row flex-column-reverse">
+                            <!-- Text Content -->
+                            <div class="col-md-6 p-3 p-lg-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <p class="text-muted small mb-1">One-on-One with OnePlus</p>
+                                    <h3 class="fw-semibold fs-4 mb-2 mb-lg-3">Your personal helpdesk.</h3>
+                                </div>
+                                <div>
+                                    <p class="small text-muted mb-2 mb-lg-3">
+                                        From finding the perfect phone to quickly resolving queries, we're always ready
+                                        to help.
+                                    </p>
+                                    <a href="#" class="small text-black text-decoration-underline fw-medium">Let's
+                                        chat</a>
+                                </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="col-md-6">
+                                <img src="{% static 'images/helpdesk_Desktop.jpg' %}"
+                                    class="img-fluid rounded-start rounded-md-end w-100 h-100"
+                                    style="object-fit: cover; min-height: 200px; max-height: 300px;"
+                                    alt="OnePlus Helpdesk">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="row g-0 h-100 flex-md-row flex-column-reverse">
+                            <!-- Text Content -->
+                            <div class="col-md-6 p-3 p-lg-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <p class="text-muted small mb-1">OnePlus Service Center</p>
+                                    <h3 class="fw-semibold fs-4 mb-2 mb-lg-3">Our technical team is here to help</h3>
+                                </div>
+                                <div>
+                                    <p class="small text-muted mb-2 mb-lg-3">
+                                        We have over 250 authorized service centers across India. All the fully-trained
+                                        OnePlus staff.
+                                    </p>
+                                    <a href="#" class="small text-black text-decoration-underline fw-medium">Find
+                                        nearest service center</a>
+                                </div>
+                            </div>
+                            <!-- Image -->
+                            <div class="col-md-6">
+                                <img src="{% static 'images/RepairService_Desktop.jpg' %}"
+                                    class="img-fluid rounded-start rounded-md-end w-100 h-100"
+                                    style="object-fit: cover; min-height: 200px; max-height: 300px;"
+                                    alt="OnePlus Service Center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Buttons -->
+            <div class="row mt-3 mt-lg-4">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap gap-2">
+                        <!-- Production Help Button -->
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-pill px-3 px-lg-4 py-2 d-flex align-items-center text-nowrap">
+                            <span class="me-2">Production help</span>
+                            <img width="15" height="15" src="https://img.icons8.com/ios/25/down-left-arrow.png"
+                                alt="arrow" style="transform: rotate(180deg);">
+                        </a>
+
+                        <!-- Shopping FAQ Button -->
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-pill px-3 px-lg-4 py-2 d-flex align-items-center text-nowrap">
+                            <span class="me-2">Shopping FAQ</span>
+                            <img width="15" height="15" src="https://img.icons8.com/ios/25/down-left-arrow.png"
+                                alt="arrow" style="transform: rotate(180deg);">
+                        </a>
+
+                        <!-- Troubleshooting Button -->
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-pill px-3 px-lg-4 py-2 d-flex align-items-center text-nowrap">
+                            <span class="me-2">Troubleshooting</span>
+                            <img width="15" height="15" src="https://img.icons8.com/ios/25/down-left-arrow.png"
+                                alt="arrow" style="transform: rotate(180deg);">
+                        </a>
+
+                        <!-- Protection Plan Button -->
+                        <a href="#"
+                            class="btn btn-outline-secondary rounded-pill px-3 px-lg-4 py-2 d-flex align-items-center text-nowrap">
+                            <span class="me-2">Protection Plan</span>
+                            <img width="15" height="15" src="https://img.icons8.com/ios/25/down-left-arrow.png"
+                                alt="arrow" style="transform: rotate(180deg);">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black text-white py-4 py-lg-5">
+        <div class="container-fluid px-lg-5 px-3">
+            <!-- Section Header -->
+            <div class="row mb-3 mb-lg-4">
+                <div class="col-12">
+                    <h2 class="mb-0 fs-4 fw-semibold">Stay connected</h2>
+                </div>
+            </div>
+
+            <!-- Cards Row -->
+            <div class="row g-3 g-lg-4">
+                <!-- App Download Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="card h-100 border-0 overflow-hidden"
+                        style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{% static 'images/3366ee472982bff9a48adcc3d672fb46.png' %}') no-repeat center center; background-size: cover;">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="fw-semibold mb-2 text-white">Shop With Exclusive Benefits</h3>
+                                    <p class="text-white mb-0">Download OnePlus store app on Google Play</p>
+                                </div>
+                                <div class="mt-3 mt-md-0">
+                                    <a href="#"
+                                        class="btn btn-outline-light border-2 rounded-pill px-4 py-2 d-inline-flex align-items-center">
+                                        <i class="fab fa-google-play me-2"></i> Google Play
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter Card -->
+                <div class="col-lg-6 col-12">
+                    <div class="card h-100 border-0 overflow-hidden"
+                        style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('{% static 'images/c10284f22fcce8ee1a30afae8dc7c973.png' %}') no-repeat center center; background-size: cover;">
+                        <div class="row g-0 h-100">
+                            <div class="col-md-6 p-4 d-flex flex-column">
+                                <div style="max-height: 100%; overflow-y: auto;" class="pe-2 custom-scrollbar">
+                                    <h3 class="fw-bold mb-3 text-white">Always be the first to know.</h3>
+                                    <p class="text-white mb-3">
+                                        Subscribe to receive news, promotions and recommendations about OnePlus products
+                                        and services.
+                                    </p>
+
+                                    <!-- Email Input -->
+                                    <div class="input-group mb-3">
+                                        <input type="text"
+                                            class="form-control bg-transparent text-white border-white rounded-0 rounded-start placeholder-white-50"
+                                            placeholder="Enter phone number">
+                                        <button class="btn btn-outline-light border-2 rounded-0 rounded-end px-3">
+                                            Notify Me
+                                        </button>
+                                    </div>
+
+                                    <!-- Checkboxes -->
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="marketingConsent">
+                                        <label class="form-check-label small text-white" for="marketingConsent">
+                                            Yes, I would like to receive marketing messages from OnePlus.
+                                        </label>
+                                    </div>
+
+                                    <!-- Collapsible Content -->
+                                    <div class="collapse mb-2" id="marketingDetails">
+                                        <p class="small text-white">
+                                            OnePlus may send personalized offers based on my purchase and usage
+                                            behavior.
+                                            This means that the advertising is better tailored to my personal interests.
+                                        </p>
+                                    </div>
+                                    <a href="#marketingDetails" class="small text-white-50 mb-3 d-inline-block"
+                                        data-bs-toggle="collapse">
+                                        <span class="show-more">Show more</span>
+                                        <span class="show-less d-none">Show less</span>
+                                    </a>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="privacyConsent">
+                                        <label class="form-check-label small text-white" for="privacyConsent">
+                                            I have read the <a href="#" class="text-decoration-underline">privacy
+                                                policy</a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="row mt-3 mt-lg-4">
+                <div class="col-12">
+                    <p class="small text-white-50 mb-0">
+                        *Lifetime Warranty Disclaimer: Users experiencing green line issues on their screens are
+                        entitled to
+                        free screen replacement within the parts supply period. This service does not cover damage
+                        caused by
+                        human or external factors. Specific terms will be based on the conditions at the service center
+                        on
+                        the day of service. OnePlus reserves the right of final interpretation regarding this service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-black text-white">
+  <div class="container-fluid p-4">
+    <div class="container">
+      <!-- Mobile Accordion Menu -->
+      <div class="row d-md-none">
+        <div class="col-12">
+          <div class="accordion" id="mobileFooterAccordion">
+            <!-- Phones -->
+            <div class="accordion-item border-0 bg-transparent border-bottom border-secondary border-opacity-25">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-white px-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePhones">
+                  <h5 class="mb-0 d-flex align-items-center justify-content-between w-100">
+                    Phones
+                    <i class="bi bi-plus accordion-icon"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="collapsePhones" class="accordion-collapse collapse" data-bs-parent="#mobileFooterAccordion">
+                <div class="accordion-body px-0 pt-0">
+                  <ul class="list-unstyled small" style="line-height: 2.0;">
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 12</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 13R</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Nord 4</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Nord CE4 Lite 5G</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 12</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 12R</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Nord CE4</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Store -->
+            <div class="accordion-item border-0 bg-transparent border-bottom border-secondary border-opacity-25">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-white px-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStore">
+                  <h5 class="mb-0 d-flex align-items-center justify-content-between w-100">
+                    Store
+                    <i class="bi bi-plus accordion-icon"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="collapseStore" class="accordion-collapse collapse" data-bs-parent="#mobileFooterAccordion">
+                <div class="accordion-body px-0 pt-0">
+                  <ul class="list-unstyled small" style="line-height: 2.0;">
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Tablet</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Audio</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Wearables</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Cases & Protection</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Power & Cables</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Bundles</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Gear</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Support -->
+            <div class="accordion-item border-0 bg-transparent border-bottom border-secondary border-opacity-25">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-white px-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSupport">
+                  <h5 class="mb-0 d-flex align-items-center justify-content-between w-100">
+                    Support
+                    <i class="bi bi-plus accordion-icon"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="collapseSupport" class="accordion-collapse collapse" data-bs-parent="#mobileFooterAccordion">
+                <div class="accordion-body px-0 pt-0">
+                  <ul class="list-unstyled small" style="line-height: 2.0;">
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Shopping FAQs</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">User Manuals</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Service Centers</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Affiliate Service</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Repair Service</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Repair Pricing</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Software Upgrade</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Explore -->
+            <div class="accordion-item border-0 bg-transparent border-bottom border-secondary border-opacity-25">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-white px-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExplore">
+                  <h5 class="mb-0 d-flex align-items-center justify-content-between w-100">
+                    Explore
+                    <i class="bi bi-plus accordion-icon"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="collapseExplore" class="accordion-collapse collapse" data-bs-parent="#mobileFooterAccordion">
+                <div class="accordion-body px-0 pt-0">
+                  <ul class="list-unstyled small" style="line-height: 2.0;">
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">About OnePlus</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Community</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Find a store</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Store App</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OxygenOS</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Press</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Compliance Disclosure</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Programs -->
+            <div class="accordion-item border-0 bg-transparent border-bottom border-secondary border-opacity-25">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-transparent text-white px-0 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrograms">
+                  <h5 class="mb-0 d-flex align-items-center justify-content-between w-100">
+                    Programs
+                    <i class="bi bi-plus accordion-icon"></i>
+                  </h5>
+                </button>
+              </h2>
+              <div id="collapsePrograms" class="accordion-collapse collapse" data-bs-parent="#mobileFooterAccordion">
+                <div class="accordion-body px-0 pt-0">
+                  <ul class="list-unstyled small" style="line-height: 2.0;">
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Exchange Program</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Red Cable Club</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Student Program</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Corporate Employee Program</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Easy Upgrades Program</a></li>
+                    <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Referral Program</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="row d-none d-md-flex">
+        <!-- Column 1 -->
+        <div class="col-md-3 col-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Phones</h5>
+          <ul class="list-unstyled small" style="line-height: 2.0;">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 12</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 13R</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Nord 4</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Nord CE4 Lite 5G</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 12</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus 12R</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Nord CE4</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-md-2 col-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Store</h5>
+          <ul class="list-unstyled small" style="line-height: 2.0;">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Tablet</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Audio</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Wearables</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Cases & Protection</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Power & Cables</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Bundles</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Gear</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-md-2 col-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Support</h5>
+          <ul class="list-unstyled small" style="line-height: 2.0;">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Shopping FAQs</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">User Manuals</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Service Centers</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Affiliate Service</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Repair Service</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Repair Pricing</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Software Upgrade</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="col-md-2 col-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Explore</h5>
+          <ul class="list-unstyled small" style="line-height: 2.0;">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">About OnePlus</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Community</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Find a store</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Store App</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OxygenOS</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Press</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Compliance Disclosure</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5 -->
+        <div class="col-md-2 col-6 mb-4 mb-md-0">
+          <h5 class="mb-3">Programs</h5>
+          <ul class="list-unstyled small" style="line-height: 2.0;">
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Exchange Program</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Red Cable Club</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">OnePlus Student Program</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Corporate Employee Program</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Easy Upgrades Program</a></li>
+            <li class="mb-1"><a href="#" class="text-white-50 text-decoration-none">Referral Program</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Payment & Social Section -->
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 gap-3">
+        <!-- Payment Methods -->
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <div class="d-flex align-items-center gap-2">
+            <img width="24" height="24" src="https://img.icons8.com/forma-thin/24/bank-card-back-side.png" alt="bank-card-back-side" style="filter: brightness(0) invert(1); opacity: 0.7;" />
+            <span class="small text-white-50">Credit/Debit Card</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img width="18" height="18" src="https://img.icons8.com/pastel-glyph/100/bank-building--v2.png" alt="net-banking" style="filter: brightness(0) invert(1); opacity: 0.7;" />
+            <span class="small text-white-50">Net Banking</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/48/rebalance-portfolio.png" alt="emi" style="filter: brightness(0) invert(1); opacity: 0.7;" />
+            <span class="small text-white-50">EMI</span>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <img width="18" height="18" src="https://img.icons8.com/external-anggara-outline-color-anggara-putra/32/external-wallet-ui-basic-anggara-outline-color-anggara-putra.png" alt="wallet" style="filter: brightness(0) invert(1); opacity: 0.7;" />
+            <span class="small text-white-50">Wallet</span>
+          </div>
+        </div>
+
+        <!-- Social Media & Support Dropdown -->
+        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+          <!-- Social Media -->
+          <div class="d-flex align-items-center gap-3">
+            <a href="#" class="text-white-50">
+              <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png" alt="Facebook" />
+            </a>
+            <a href="#" class="text-white-50">
+              <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt="Twitter" />
+            </a>
+            <a href="#" class="text-white-50">
+              <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="Instagram" />
+            </a>
+          </div>
+
+          <!-- Support Dropdown -->
+          <div class="dropdown">
+            <button class="btn text-white-50  d-flex align-items-center"  id="supportDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              Get Support From OnePlus
+              <i class="bi bi-chevron-down ms-1 transition-all"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="supportDropdown">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex align-items-center">
+                    <img width="20" height="20" src="https://img.icons8.com/windows/32/sms--v1.png" alt="sms--v1" class="me-2" />
+                    <div class="flex-grow-1">
+                      <div class="fw-bold">Live Chat</div>
+                      <div class="small text-muted">E-Store Chat Support</div>
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex align-items-center">
+                    <img width="20" height="20" src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png" alt="whatsapp--v1" class="me-2" />
+                    <div class="flex-grow-1">
+                      <div class="fw-bold">WhatsApp</div>
+                      <div class="small text-muted">Repair and Technical Support</div>
+                      <div class="small text-muted">9 AM - 9 PM, Mon to Sun</div>
+                    </div>
+                    <i class="bi bi-chevron-right"></i>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <div class="d-flex align-items-center">
+                    <img width="20" height="20" style="transform: rotate(270deg);" src="https://img.icons8.com/material-outlined/24/phone-disconnected.png" alt="phone-disconnected" class="me-2" />
+                    <div class="flex-grow-1">
+                      <div class="fw-bold">1800 102 8411 (Toll Free)</div>
+                      <div class="small text-muted">9 AM - 9 PM, Mon to Sun</div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Links & Copyright -->
+      <div class="row mt-4 pt-3 border-top d-flex justify-content-between align-items-center">
+        <div class="col-auto">
+          <a href="#" class="text-white-50 me-3 small text-decoration-none footer-links">Privacy Policy <span class="text-white text-opacity-50 mx-2">|</span></a>
+          <a href="#" class="text-white-50 me-3 small text-decoration-none footer-links">User Agreement <span class="text-white text-opacity-50 mx-2">|</span></a>
+          <a href="#" class="text-white-50 me-3 small text-decoration-none footer-links">Terms of Sale <span class="text-white text-opacity-50 mx-2">|</span></a>
+          <a href="#" class="text-white-50 small text-decoration-none footer-links">E-waste Management <span class="text-white text-opacity-50 mx-2">|</span></a>
+          <a href="#" class="text-white-50 small text-decoration-none footer-links">Security Response Center(OneSRC)</a>
+          <a href="#" class="text-white-50 small text-decoration-none mx-2">© 2025 OnePlus. All rights reserved.</a>
+        </div>
+        <div class="col-auto d-flex align-items-center ms-auto">
+          <span class="text-white-50 small me-2 footer-links">India(English)</span>
+          <img style="filter: brightness(0) invert(1); opacity: 0.5;" width="16" height="16" src="https://img.icons8.com/ios/25/globe--v1.png" alt="globe--v1" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Add this CSS to handle the plus/minus toggle icons -->
+<style>
+  .accordion-button:not(.collapsed) .bi-plus {
+    display: none;
+  }
+  .accordion-button:not(.collapsed)::after {
+    content: "\F62A"; /* Bootstrap minus icon */
+    font-family: "bootstrap-icons";
+    transform: none;
+    background-image: none;
+    font-size: 1rem;
+    color: white;
+  }
+  .accordion-button::after {
+    display: none;
+  }
+  .accordion-button.collapsed .bi-plus {
+    display: block;
+  }
+  .accordion-button.collapsed::after {
+    display: none;
+  }
+</style>
+
+<!-- Add this JavaScript to handle the icon toggle -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionButtons = document.querySelectorAll('.accordion-button');
+  
+  accordionButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const icon = this.querySelector('.bi');
+      if (icon) {
+        if (this.classList.contains('collapsed')) {
+          icon.classList.remove('bi-dash');
+          icon.classList.add('bi-plus');
+        } else {
+          icon.classList.remove('bi-plus');
+          icon.classList.add('bi-dash');
+        }
+      }
+    });
+  });
+});
+</script>
+    <style>
+        /* Mobile-specific adjustments */
+        @media (max-width: 767.98px) {
+
+            /* Stack columns vertically on mobile */
+            .card .row>[class^="col-"] {
+                width: 100%;
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
+
+            /* Image comes first on mobile */
+            .order-md-first {
+                order: -1;
+            }
+
+            /* Adjust card heights */
+            .card {
+                height: auto !important;
+            }
+
+            /* Reduce padding on mobile */
+            .p-lg-4 {
+                padding: 1rem !important;
+            }
+
+            /* Adjust image height */
+            .card img {
+                min-height: 180px !important;
+                max-height: 200px !important;
+            }
+        }
+
+        /* Tablet adjustments */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .card img {
+                min-height: 220px !important;
+            }
+        }
+    </style>
+
+    <style>
+        /* Mobile-specific styles */
+        @media (max-width: 767.98px) {
+
+            /* Adjust image heights */
+            .product-card img {
+                height: 360px !important;
+            }
+
+            /* Smaller text for mobile */
+            .position-absolute p,
+            .position-absolute .small {
+                font-size: 0.75rem !important;
+            }
+
+            /* Adjust heading sizes */
+            .position-absolute h3,
+            .position-absolute .h4 {
+                font-size: 1.1rem !important;
+            }
+
+            /* Compact button sizes */
+            .position-absolute .btn {
+                padding: 0.25rem 1rem !important;
+                font-size: 0.75rem !important;
+            }
+
+            /* Bank offer bar adjustments */
+            .bank-offer-bar {
+                padding: 0.25rem !important;
+            }
+
+            .bank-offer-bar img {
+                height: 16px !important;
+            }
+
+            .bank-offer-bar .small {
+                font-size: 0.65rem !important;
+            }
+        }
+    </style>
+
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
