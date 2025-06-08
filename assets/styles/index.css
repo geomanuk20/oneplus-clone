@@ -1,65 +1,260 @@
-
-#section1-button:hover {
-    background-color: rgb(54, 51, 51) !important;
-    color: rgb(213, 210, 210) !important;
+/* Remove default body margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+header {
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background-color: white;
+    padding: 10px;
+  }
+}
+
+/* Hero section adjustments */
+.hero-section {
+  margin-top: -1px; /* Remove gap between header and hero */
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.hero-image {
+  height: 720px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#section1-button:hover {
+  background-color: rgb(54, 51, 51) !important;
+  color: rgb(213, 210, 210) !important;
+}
+
+#section2-button:hover {
+  background-color: rgb(54, 51, 51) !important;
+  color: rgb(213, 210, 210) !important;
+}
 
 /* feedback */
 .feedback-section {
-  text-align: center;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 600px;
+  text-align: start;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 400px;
   border-radius: 8px;
   background-color: #f8f9fa;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1), 0 1.5px 6px 0 rgba(0, 0, 0, 0.08);
 }
 
 .feedback-title {
-  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
   color: #333;
-  font-size: 1.2rem;
 }
 
 .star-rating {
-  display: inline-block;
-  font-size: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.star-rating input {
-  display: none;
-}
-
-.star-rating label {
+.star-label {
   font-size: 2rem;
-  padding: 0 5px;
+  color: #dee2e6;
   cursor: pointer;
-  color: #ccc;
   transition: color 0.2s;
+  flex: 1;
+  text-align: center;
+  position: relative;
 }
 
-.star-rating input:checked ~ label,
-.star-rating label:hover,
-.star-rating label:hover ~ label {
-  color: #ffc107;
+/* Highlight stars up to the hovered one */
+.star-rating:hover .star-label {
+  color: #2f04ee;
 }
 
-.star-rating input:checked + label {
-  color: #ffc107;
+/* When not hovering, show selected rating */
+.star-rating input:checked ~ .star-label {
+  color: #dee2e6;
+}
+
+.star-rating .star-label:hover ~ .star-label {
+  color: #dee2e6;
+}
+
+.star-rating input:checked + .star-label,
+.star-rating input:checked ~ .star-label:hover,
+.star-rating input:checked ~ .star-label:hover ~ .star-label {
+  color: #4107ff;
 }
 
 .submit-btn {
-  margin-top: 1.5rem;
-  padding: 0.5rem 2rem;
   background-color: #007bff;
-  color: white;
   border: none;
+  padding: 0.5rem 1.5rem;
   border-radius: 4px;
-  cursor: pointer;
+  color: white;
   transition: background-color 0.2s;
+  min-width: 100px;
+}
+#feedbtn {
+  background-color: rgb(197, 196, 196);
+  color: white;
+}
+.submit-btn:hover {
+  background-color: #0069d9;
 }
 
-.submit-btn:hover {
-  background-color: #0056b3;
+@media (max-width: 767.98px) {
+  .star-container {
+    max-width: 100% !important;
+    padding: 0 15px;
+  }
+
+  .star-label {
+    font-size: 1.75rem;
+  }
+
+  .text-muted {
+    font-size: 0.85rem;
+  }
+}
+
+/* warranty */
+
+#warranty {
+  background-color: #faf9f9;
+}
+
+#ensemble {
+  background-color: rgb(28, 27, 27);
+}
+
+.placeholder-white::placeholder {
+  color: white !important;
+}
+
+/* Style for the show more/less link */
+a[data-bs-toggle="collapse"] {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Checkbox alignment */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #007bff; /* Modern browsers */
+}
+
+/* For older browsers */
+input[type="checkbox"] {
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  left: 3px;
+  top: 0;
+}
+
+/* Complete scrollbar customization */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* Hide scrollbar when not scrolling */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb,
+.custom-scrollbar:active::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* footer */
+
+.footer-links li a:hover {
+  color: white !important;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Rotate arrow when dropdown is shown */
+.dropdown-toggle:not(.collapsed) .bi-chevron-down {
+  transform: rotate(180deg);
+}
+
+/* Smooth transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Pointer cursor for clickable elements */
+.dropdown-toggle,
+.dropdown-item {
+  cursor: pointer;
+}
+
+.footer-links:hover {
+  color: white !important;
 }

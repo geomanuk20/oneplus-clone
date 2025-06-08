@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: oneplus-clone
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn your_project.wsgi:application"
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_DEBUG
+        value: "False"

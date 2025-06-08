@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-c6f*)ml^0xx6e6pbiuw8(_=90&-nq)eug7nogxxv6+l9h20jhp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['oneplus-clone.onrender.com', 'localhost', '127.0.0.1']
+DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 
 # Application definition
