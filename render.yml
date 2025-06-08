@@ -2,8 +2,8 @@ services:
   - type: web
     name: oneplus-clone
     runtime: python
-    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
-    startCommand: "gunicorn oneplus_clone.wsgi:application"  # Replace with your actual project name
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn oneplus_clone.wsgi:application"  # Replace with your actual Django project name
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
