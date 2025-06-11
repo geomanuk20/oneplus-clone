@@ -2,8 +2,12 @@ services:
   - type: web
     name: oneplus-clone
     runtime: python
-    buildCommand: "pip install -r requirements.txt && python manage.py migrate"
-    startCommand: "gunicorn myproject.wsgi:application"  # Replace with your actual Django project name
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput
+      python manage.py migrate
+    startCommand: "gunicorn myproject.wsgi:application"
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
