@@ -3,7 +3,7 @@ services:
     name: oneplus-clone
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "gunicorn oneplus_clone.wsgi:application"  # Replace with your actual Django project name
+    startCommand: "gunicorn myproject.wsgi:application"  # Replace with your actual Django project name
     envVars:
       - key: DJANGO_SECRET_KEY
         generateValue: true
