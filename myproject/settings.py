@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-c6f*)ml^0xx6e6pbiuw8(_=90&-nq)eug7nogxxv6+l9h20jhp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['oneplus-clone.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = [
+    "oneplus-clone2.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
 
@@ -45,13 +49,13 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'myproject.urls'
