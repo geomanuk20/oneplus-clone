@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Django
+db.sqlite3
+*.sqlite3
+
+# Virtual environment
+env/
+venv/
+ENV/
+.venv/
+.env/
+
+# VS Code settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Static/media files (optional, if generated or user-uploaded)
+staticfiles/
+media/
+
+# Python egg info
+*.egg-info/
+dist/
+build/
+
+# Node modules (if using npm/yarn for frontend)
+node_modules/
+
+# Secret files
+*.env
